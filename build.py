@@ -1082,7 +1082,7 @@ RUN apt-get update && \
     df += '''
 WORKDIR /opt/tritonserver
 RUN rm -fr /opt/tritonserver/*
-ENV NVIDIA_PRODUCT_NAME="Triton Server"
+ENV NVIDIA_PRODUCT_NAME="Triton Inference Server"
 COPY docker/entrypoint.d/ /opt/nvidia/entrypoint.d/
 '''
     df += '''
